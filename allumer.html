@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Procédure d'Allumage — Behringer X32</title>
+  <meta name="description" content="Procédure pas-à-pas pour allumer la console de son Behringer X32 et brancher les instruments en toute sécurité.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================================================================== -->
+  <!-- BARRE DE NAVIGATION                                                  -->
+  <!-- ==================================================================== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <div class="brand-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <line x1="4" y1="21" x2="4" y2="14"></line>
+            <line x1="4" y1="10" x2="4" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12" y2="3"></line>
+            <line x1="20" y1="21" x2="20" y2="16"></line>
+            <line x1="20" y1="12" x2="20" y2="3"></line>
+            <line x1="1" y1="14" x2="7" y2="14"></line>
+            <line x1="9" y1="8" x2="15" y2="8"></line>
+            <line x1="17" y1="16" x2="23" y2="16"></line>
+          </svg>
+        </div>
+        <div class="brand-title">
+          <span class="main-name">BEHRINGER X32</span>
+          <span class="sub-name">Guide & Consignes Régie</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="allumer.html" class="nav-link btn-start active">⚡ Allumer la table</a></li>
+        <li><a href="eteindre.html" class="nav-link btn-stop">🛑 Éteindre la table</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==================================================================== -->
+  <!-- CONTENU PRINCIPAL                                                    -->
+  <!-- ==================================================================== -->
+  <main class="main-wrapper">
+    
+    <!-- En-tête de la page -->
+    <header class="page-header">
+      <div class="header-badge green">Protocole de Démarrage</div>
+      <h1 class="page-title">Procédure d'Allumage de la Régie</h1>
+      <p class="page-description">
+        Suivez rigoureusement chaque étape dans l'ordre chronologique. Cochez les étapes au fur et à mesure pour valider la mise en service du système audio.
+      </p>
+    </header>
+
+    <!-- Barre de progression interactive & actions -->
+    <div class="checklist-toolbar">
+      <div class="progress-info">
+        <span class="progress-text" id="progress-text">0 sur 3 étapes validées (0%)</span>
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill" id="progress-bar-fill"></div>
+        </div>
+      </div>
+
+      <div class="toolbar-actions">
+        <button class="btn-action" id="btn-reset" title="Remettre la checklist à zéro">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg>
+          Réinitialiser
+        </button>
+        <button class="btn-action" id="btn-print" title="Imprimer ou enregistrer en PDF">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          Imprimer
+        </button>
+      </div>
+    </div>
+
+    <!-- LISTE DES ÉTAPES -->
+    <div class="steps-container">
+
+      <!-- ============================================================== -->
+      <!-- ÉTAPE 1 : ALLUMER (Mise sous tension de la console)           -->
+      <!-- ============================================================== -->
+      <article class="step-card">
+        <div class="step-content">
+          <div class="step-header">
+            <div class="step-number">1</div>
+            <span class="step-badge">Mise sous tension</span>
+          </div>
+          <h2 class="step-title">ALLUMER — Mettre sous tension la console</h2>
+          <div class="step-description">
+            <ol style="margin-left: 1.25rem; margin-top: 0.5rem;">
+              <li style="margin-bottom: 0.4rem;"><strong>Brancher l’alimentation</strong> sur la prise murale.</li>
+              <li style="margin-bottom: 0.4rem;"><strong>Allumer la console</strong> avec le bouton d’alimentation situé à l’arrière.</li>
+            </ol>
+          </div>
+          
+          <button class="step-check-btn" type="button">
+            <span class="checkbox-custom">
+              <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <span class="check-label">Marquer comme fait</span>
+          </button>
+        </div>
+
+        <!-- Galerie d'images de l'Étape 1 (1 ou plusieurs photos) -->
+        <div class="step-gallery" data-gallery>
+          <img src="images/allumage-step1-alim.jpg" alt="1. Brancher l’alimentation sur la prise murale">
+        </div>
+      </article>
+
+      <!-- ENCART DE SÉCURITÉ ÉTAPE 1 -->
+      <div class="info-box warning">
+        <div class="info-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+        </div>
+        <div class="info-content">
+          <div class="info-title">⚠️ RÈGLE DE SÉCURITÉ AUDITIVE</div>
+          <div class="info-desc">
+            <strong>Ne surtout pas toucher aux branchements</strong> durant cette étape pour éviter les possibles acouphènes et bruits de claquement violent ("plocs").
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================== -->
+      <!-- ÉTAPE 2 : INSTRUMENTS (Brancher et configurer)                 -->
+      <!-- ============================================================== -->
+      <article class="step-card">
+        <div class="step-content">
+          <div class="step-header">
+            <div class="step-number">2</div>
+            <span class="step-badge">Instruments &amp; Retours</span>
+          </div>
+          <h2 class="step-title">INSTRUMENTS — Brancher et configurer les instruments</h2>
+          <div class="step-description">
+            <ol style="margin-left: 1.25rem; margin-top: 0.5rem;">
+              <li style="margin-bottom: 0.5rem;">
+                <strong>Vérifier que toutes les entrées et sorties</strong> ont le <strong>« MUTE » d’activé</strong> avant de toucher aux branchements.
+              </li>
+              <li style="margin-bottom: 0.5rem;">
+                <strong>Brancher les instruments</strong> sur la ligne voulue et <strong>éteindre les « MUTE »</strong> des entrées que l’on souhaite utiliser (instruments après branchements et micros* qui vont être utilisés).
+              </li>
+              <li style="margin-bottom: 0.5rem;">
+                <strong>Désactiver le « MUTE » des sorties</strong> que l’on souhaite utiliser (pendant les répétitions, il est conseillé d’utiliser uniquement les retours, situés sur la partie droite de la console, les <strong>lignes « BUS » Jaunes</strong>).
+              </li>
+            </ol>
+          </div>
+
+          <button class="step-check-btn" type="button">
+            <span class="checkbox-custom">
+              <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <span class="check-label">Marquer comme fait</span>
+          </button>
+        </div>
+
+        <!-- Galerie d'images de l'Étape 2 (1 ou plusieurs photos) -->
+        <div class="step-gallery" data-gallery>
+          <img src="images/allumage-step2-mutes.jpg" alt="1. Contrôle MUTE actif sur entrées & sorties avant branchements">
+          <img src="images/allumage-step2-bus-jaunes.jpg" alt="2 & 3. Retours BUS Jaunes à droite, section AUX et canal vert micros">
+        </div>
+      </article>
+
+      <!-- ENCART REPÈRE MICROPHONES -->
+      <div class="info-box tip">
+        <div class="info-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="22"></line></svg>
+        </div>
+        <div class="info-content">
+          <div class="info-title">🎤 REPÈRE MICROPHONES SUR LA CONSOLE</div>
+          <div class="info-desc">
+            <p style="margin-bottom: 0.35rem;">
+              * <strong>Micro connecté seul</strong> : celui-ci est branché sur le <strong>ch 8</strong>, repéré par la <strong>couleur verte</strong>.
+            </p>
+            <p>
+              * <strong>Groupe de 4 micros connectés</strong> : situé dans la partie <strong>AUX</strong>, on y accède grâce au bouton à gauche de la console, branché sur le <strong>AUX 1</strong>, repéré par la <strong>couleur verte</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================== -->
+      <!-- ÉTAPE 3 : CONSOLE (Gestion du volume et limite 0 dB)           -->
+      <!-- ============================================================== -->
+      <article class="step-card">
+        <div class="step-content">
+          <div class="step-header">
+            <div class="step-number">3</div>
+            <span class="step-badge">Faders &amp; Volume</span>
+          </div>
+          <h2 class="step-title">CONSOLE — Gérer le volume des différents instruments et micros</h2>
+          <div class="step-description">
+            <ol style="margin-left: 1.25rem; margin-top: 0.5rem;">
+              <li style="margin-bottom: 0.6rem;">
+                Pour manipuler le volume, on utilise les <strong>boutons glissants (faders)</strong>. Il est conseillé de régler d’abord le son de la sortie, puis de régler ensuite le son de chaque instrument si nécessaire.
+              </li>
+              <li style="margin-bottom: 0.4rem;">
+                <strong>⚠️ Interdiction de dépasser le niveau 0 :</strong> Il est fortement déconseillé de dépasser le <strong>niveau 0 dB</strong> lors du réglage du volume, sous risque immédiat de distorsion et de casse des enceintes.
+              </li>
+            </ol>
+          </div>
+
+          <button class="step-check-btn" type="button">
+            <span class="checkbox-custom">
+              <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <span class="check-label">Marquer comme fait</span>
+          </button>
+        </div>
+
+        <!-- Galerie d'images de l'Étape 3 (1 ou plusieurs photos) -->
+        <div class="step-gallery" data-gallery>
+          <img src="images/allumage-step3-fader-0db.jpg" alt="Réglage des faders glissants & limite stricte à 0 dB">
+          <img src="images/allumage-step3-faders-groupes.jpg" alt="Vue détaillée des faders motorisés et touches MUTE">
+        </div>
+      </article>
+
+    </div><!-- /.steps-container -->
+
+  </main>
+
+  <!-- ==================================================================== -->
+  <!-- PIED DE PAGE                                                         -->
+  <!-- ==================================================================== -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html">Accueil</a>
+      <a href="allumer.html">Procédure Allumage</a>
+      <a href="eteindre.html">Procédure Extinction</a>
+    </div>
+    <p>Guide d'utilisation Behringer X32 • Conçu pour une régie son simple et sécurisée</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

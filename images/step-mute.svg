@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="redGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="#0b0f17"/>
+
+  <!-- Console Surface section -->
+  <rect x="50" y="40" width="500" height="320" rx="12" fill="#111827" stroke="rgba(239,68,68,0.3)" stroke-width="2"/>
+  <text x="300" y="75" fill="#f87171" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">🛑 COUPURE SON - MASTER MUTE &amp; DCA</text>
+
+  <!-- Big Master MUTE button active -->
+  <g transform="translate(190, 110)">
+    <rect x="0" y="0" width="220" height="110" rx="14" fill="url(#redGlow)" stroke="#fca5a5" stroke-width="3" filter="drop-shadow(0 0 20px rgba(239,68,68,0.7))"/>
+    <circle cx="110" cy="55" r="45" fill="rgba(0,0,0,0.2)"/>
+    <!-- Speaker with X icon -->
+    <path d="M95 45 L85 45 L75 55 L75 65 L85 65 L95 75 Z" fill="#ffffff"/>
+    <line x1="120" y1="45" x2="140" y2="65" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <line x1="140" y1="45" x2="120" y2="65" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <text x="110" y="95" fill="#ffffff" font-family="sans-serif" font-size="15" font-weight="900" text-anchor="middle">MUTE ALL OUTPUTS</text>
+  </g>
+
+  <!-- Warning indicator bar -->
+  <rect x="90" y="260" width="420" height="60" rx="8" fill="rgba(239,68,68,0.1)" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="300" y="285" fill="#fca5a5" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Vérifiez que les retours scène et la façade sont totalement silencieux</text>
+  <text x="300" y="305" fill="#94a3b8" font-family="sans-serif" font-size="12" text-anchor="middle">Abaissez également le fader Main LR jusqu'à -∞</text>
+</svg>

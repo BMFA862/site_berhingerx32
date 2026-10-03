@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Procédure d'Extinction — Behringer X32</title>
+  <meta name="description" content="Procédure sécurisée en 3 étapes pour éteindre la console Behringer X32 et protéger le matériel.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================================================================== -->
+  <!-- BARRE DE NAVIGATION                                                  -->
+  <!-- ==================================================================== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <div class="brand-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <line x1="4" y1="21" x2="4" y2="14"></line>
+            <line x1="4" y1="10" x2="4" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12" y2="3"></line>
+            <line x1="20" y1="21" x2="20" y2="16"></line>
+            <line x1="20" y1="12" x2="20" y2="3"></line>
+            <line x1="1" y1="14" x2="7" y2="14"></line>
+            <line x1="9" y1="8" x2="15" y2="8"></line>
+            <line x1="17" y1="16" x2="23" y2="16"></line>
+          </svg>
+        </div>
+        <div class="brand-title">
+          <span class="main-name">BEHRINGER X32</span>
+          <span class="sub-name">Guide & Consignes Régie</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="allumer.html" class="nav-link btn-start">⚡ Allumer la table</a></li>
+        <li><a href="eteindre.html" class="nav-link btn-stop active">🛑 Éteindre la table</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==================================================================== -->
+  <!-- CONTENU PRINCIPAL                                                    -->
+  <!-- ==================================================================== -->
+  <main class="main-wrapper">
+    
+    <!-- En-tête de la page -->
+    <header class="page-header">
+      <div class="header-badge red">Protocole d'Extinction</div>
+      <h1 class="page-title">Procédure d'Extinction de la Régie</h1>
+      <p class="page-description">
+        Respectez scrupuleusement l'ordre de mise hors tension pour préserver l'intégrité de la console et des haut-parleurs.
+      </p>
+    </header>
+
+    <!-- Barre de progression interactive & actions -->
+    <div class="checklist-toolbar">
+      <div class="progress-info">
+        <span class="progress-text" id="progress-text">0 sur 3 étapes validées (0%)</span>
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill red-theme" id="progress-bar-fill"></div>
+        </div>
+      </div>
+
+      <div class="toolbar-actions">
+        <button class="btn-action" id="btn-reset" title="Remettre la checklist à zéro">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg>
+          Réinitialiser
+        </button>
+        <button class="btn-action" id="btn-print" title="Imprimer ou enregistrer en PDF">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          Imprimer
+        </button>
+      </div>
+    </div>
+
+    <!-- LISTE DES ÉTAPES -->
+    <div class="steps-container">
+
+      <!-- ============================================================== -->
+      <!-- ÉTAPE 1 : SÉCURISER (MUTE BUS/Instruments & Procédure écran)  -->
+      <!-- ============================================================== -->
+      <article class="step-card">
+        <div class="step-content">
+          <div class="step-header">
+            <div class="step-number">1</div>
+            <span class="step-badge">Sécurisation &amp; Écran</span>
+          </div>
+          <h2 class="step-title">SÉCURISER — Sécuriser la console avant de l’éteindre</h2>
+          <div class="step-description">
+            <ol style="margin-left: 1.25rem; margin-top: 0.5rem;">
+              <li style="margin-bottom: 0.6rem;">
+                <strong>Activer le « MUTE »</strong> sur toutes les sorties <strong>« BUS »</strong>, puis faire de même avec <strong>tous les instruments</strong> (sauf pour la ligne <em>« AUX PC »</em>).
+              </li>
+              <li style="margin-bottom: 0.5rem;">
+                Sur l’écran, sélectionner le menu <strong>①</strong> (touche <strong>SETUP</strong>), puis à l’aide des flèches directionnelles <strong>⑤</strong> sélectionner le menu <strong>②</strong> (onglet <strong>GLOBAL</strong>). Ensuite, à l’aide du bouton <strong>③</strong>, sélectionnez l’option <strong>④</strong> (<strong>SHUTDOWN</strong>) puis validez en cliquant sur le bouton <strong>③</strong>.
+              </li>
+            </ol>
+          </div>
+          <button class="step-check-btn" type="button">
+            <span class="checkbox-custom">
+              <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <span class="check-label">Marquer comme fait</span>
+          </button>
+        </div>
+
+        <!-- Galerie d'images de l'Étape 1 (1 ou plusieurs photos) -->
+        <div class="step-gallery" data-gallery>
+          <img src="images/extinction-step1-mutes-tous.jpg" alt="1. Activer MUTE sur toutes les sorties BUS et instruments (sauf AUX PC)">
+          <img src="images/extinction-screen-verified-overlay.jpg" alt="2. Navigation écran : ① SETUP, ⑤ Flèches, ② GLOBAL, ③/④ SHUTDOWN">
+        </div>
+      </article>
+
+      <!-- ENCART DE SÉCURITÉ AUDITIVE -->
+      <div class="info-box warning">
+        <div class="info-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+        </div>
+        <div class="info-content">
+          <div class="info-title">⚠️ RÈGLE DE SÉCURITÉ AUDITIVE</div>
+          <div class="info-desc">
+            <strong>Ne surtout pas toucher aux branchements</strong> durant cette étape pour éviter les bruits violents et les possibles acouphènes.
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================== -->
+      <!-- ÉTAPE 2 : INSTRUMENTS (Débrancher les instruments)            -->
+      <!-- ============================================================== -->
+      <article class="step-card">
+        <div class="step-content">
+          <div class="step-header">
+            <div class="step-number">2</div>
+            <span class="step-badge">Débranchement</span>
+          </div>
+          <h2 class="step-title">INSTRUMENTS — Débrancher les instruments</h2>
+          <div class="step-description">
+            <ol style="margin-left: 1.25rem; margin-top: 0.5rem;">
+              <li style="margin-bottom: 0.6rem;">
+                <strong>Débrancher &amp; éteindre les instruments</strong> tels que piano, guitare, basse, etc.
+              </li>
+            </ol>
+            <ul style="margin-left: 1.25rem; margin-top: 0.4rem; list-style-type: none; padding-left: 0;">
+              <li style="margin-bottom: 0.4rem; color: #fbbf24;">
+                ⚠️ <strong>Ne débrancher QUE les instruments</strong> : les câbles micros et les sorties enceintes <strong>doivent impérativement rester branchés</strong>.
+              </li>
+              <li style="color: #f87171;">
+                ⚠️ <strong>Bien penser à éteindre tous les micros connectés</strong> (émetteurs sans fil HF).
+              </li>
+            </ul>
+          </div>
+
+          <button class="step-check-btn" type="button">
+            <span class="checkbox-custom">
+              <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <span class="check-label">Marquer comme fait</span>
+          </button>
+        </div>
+
+      <!-- ============================================================== -->
+      <!-- ÉTAPE 3 : CONSOLE (Mettre la console hors tension)            -->
+      <!-- ============================================================== -->
+      <article class="step-card">
+        <div class="step-content">
+          <div class="step-header">
+            <div class="step-number">3</div>
+            <span class="step-badge">Mise hors tension</span>
+          </div>
+          <h2 class="step-title">CONSOLE — Mettre la console hors tension</h2>
+          <div class="step-description">
+            <ol style="margin-left: 1.25rem; margin-top: 0.5rem;">
+              <li style="margin-bottom: 0.6rem;">
+                <strong>Vérification écran :</strong> Si l’image sur l’écran est bien identique à l’image de confirmation (l'image jointe au dos de la feuille affichant <em>"Safe to power off console"</em>), éteindre la console avec le bouton d’alimentation situé à l’arrière de celle-ci.
+              </li>
+              <li style="margin-bottom: 0.5rem;">
+                <strong>Débrancher l’alimentation secteur.</strong>
+              </li>
+            </ol>
+            <p style="color: #fbbf24; margin-top: 0.4rem;">
+              ⚠️ <strong>Ne débrancher QUE les multiprises des prises murales</strong> (ne pas débrancher les cordons directement sur la console).
+            </p>
+          </div>
+
+          <button class="step-check-btn" type="button">
+            <span class="checkbox-custom">
+              <svg viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <span class="check-label">Marquer comme fait</span>
+          </button>
+        </div>
+
+        <!-- Galerie d'images de l'Étape 3 (1 ou plusieurs photos) -->
+        <div class="step-gallery" data-gallery>
+          <img src="images/extinction-step3-ecran-safe.jpg" alt="1. Écran de validation Shutdown : Safe to Power Off">
+          <img src="images/extinction-step3-bouton-arriere.jpg" alt="2. Bouton arrière sur position arrêt O et débranchement multiprise murale">
+        </div>
+      </article>
+
+    </div><!-- /.steps-container -->
+
+  </main>
+
+  <!-- ==================================================================== -->
+  <!-- PIED DE PAGE                                                         -->
+  <!-- ==================================================================== -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html">Accueil</a>
+      <a href="allumer.html">Procédure Allumage</a>
+      <a href="eteindre.html">Procédure Extinction</a>
+    </div>
+    <p>Guide d'utilisation Behringer X32 • Conçu pour une régie son simple et sécurisée</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

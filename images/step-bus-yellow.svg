@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgSur" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b111e"/>
+      <stop offset="100%" stop-color="#172033"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bgSur)"/>
+  
+  <rect x="30" y="25" width="540" height="350" rx="14" fill="#111827" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  <text x="300" y="55" fill="#f8fafc" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle">ROUTAGE INSTRUMENTS, BUS JAUNES &amp; MICROS</text>
+
+  <!-- Partie Gauche : Section AUX & Canal Vert -->
+  <g transform="translate(50, 75)">
+    <rect x="0" y="0" width="220" height="190" rx="10" fill="#182234" stroke="rgba(6,182,212,0.3)" stroke-width="1.5"/>
+    <rect x="0" y="0" width="220" height="32" rx="10" fill="#0369a1"/>
+    <text x="110" y="21" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">SECTION GAUCHE : ENTRÉES &amp; AUX</text>
+
+    <!-- Groupe 4 micros AUX -->
+    <rect x="15" y="45" width="190" height="60" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+    <circle cx="35" cy="75" r="12" fill="#0284c7"/>
+    <text x="35" y="80" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">AUX</text>
+    <text x="120" y="67" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="bold">Bouton AUX (à gauche)</text>
+    <text x="120" y="87" fill="#94a3b8" font-family="sans-serif" font-size="11">Groupe des 4 micros connectés</text>
+
+    <!-- Micro seul vert -->
+    <rect x="15" y="115" width="190" height="60" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+    <rect x="25" y="125" width="40" height="40" rx="4" fill="#059669"/>
+    <text x="45" y="149" fill="#ffffff" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">CH X</text>
+    <text x="125" y="138" fill="#34d399" font-family="sans-serif" font-size="12" font-weight="bold">Canal X (Couleur Verte)</text>
+    <text x="125" y="157" fill="#94a3b8" font-family="sans-serif" font-size="11">Micro connecté seul</text>
+  </g>
+
+  <!-- Partie Droite : Bus Jaunes (Retours) -->
+  <g transform="translate(310, 75)">
+    <rect x="0" y="0" width="240" height="190" rx="10" fill="#182234" stroke="rgba(245,158,11,0.4)" stroke-width="1.5"/>
+    <rect x="0" y="0" width="240" height="32" rx="10" fill="#b45309"/>
+    <text x="120" y="21" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">PARTIE DROITE : BUS JAUNES</text>
+
+    <!-- Lignes BUS Jaunes -->
+    <g transform="translate(15, 45)">
+      <rect x="0" y="0" width="210" height="48" rx="6" fill="#78350f" stroke="#fbbf24" stroke-width="1.5"/>
+      <rect x="10" y="8" width="50" height="32" rx="4" fill="#f59e0b"/>
+      <text x="35" y="28" fill="#000000" font-family="sans-serif" font-size="11" font-weight="900" text-anchor="middle">BUS</text>
+      <text x="70" y="23" fill="#fef08a" font-family="sans-serif" font-size="11" font-weight="bold">Lignes Jaunes (Retours)</text>
+      <text x="70" y="38" fill="#fcd34d" font-family="sans-serif" font-size="10">Conseillé pour répétitions</text>
+    </g>
+
+    <!-- Statut MUTE désactivé pour utilisation -->
+    <g transform="translate(15, 105)">
+      <rect x="0" y="0" width="210" height="70" rx="6" fill="#0f172a" stroke="#64748b"/>
+      <circle cx="28" cy="35" r="14" fill="#334155" stroke="#10b981" stroke-width="2"/>
+      <text x="28" y="40" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">OFF</text>
+      <text x="52" y="27" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="bold">Désactiver MUTE</text>
+      <text x="52" y="43" fill="#cbd5e1" font-family="sans-serif" font-size="10">Uniquement sur les sorties utilisées</text>
+      <text x="52" y="58" fill="#94a3b8" font-family="sans-serif" font-size="10">(BUS retours répétitions)</text>
+    </g>
+  </g>
+
+  <!-- Bandeau conseil / règle bas de carte -->
+  <g transform="translate(50, 280)">
+    <rect x="0" y="0" width="500" height="75" rx="8" fill="rgba(6,182,212,0.08)" stroke="rgba(6,182,212,0.3)"/>
+    <text x="250" y="24" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">💡 ORDRE IMPÉRATIF POUR LES INSTRUMENTS</text>
+    <text x="250" y="44" fill="#e2e8f0" font-family="sans-serif" font-size="11" text-anchor="middle">1. Vérifier le MUTE actif avant de brancher le câble jack ou XLR</text>
+    <text x="250" y="62" fill="#cbd5e1" font-family="sans-serif" font-size="11" text-anchor="middle">2. Brancher l'instrument ➔ 3. Éteindre le MUTE de la voie pour activer le son</text>
+  </g>
+</svg>

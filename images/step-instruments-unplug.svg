@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgBox" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b111e"/>
+      <stop offset="100%" stop-color="#172033"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="#0b0f17"/>
+
+  <rect x="30" y="25" width="540" height="350" rx="14" fill="#111827" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  <text x="300" y="55" fill="#f8fafc" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle">2. DÉBRANCHER &amp; ÉTEINDRE LES INSTRUMENTS</text>
+
+  <!-- Colonne Gauche : Ce qu'il FAUT débrancher et éteindre -->
+  <g transform="translate(50, 75)">
+    <rect x="0" y="0" width="230" height="190" rx="10" fill="#182234" stroke="#f59e0b" stroke-width="1.5"/>
+    <rect x="0" y="0" width="230" height="32" rx="10" fill="#b45309"/>
+    <text x="115" y="21" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">DÉBRANCHER &amp; ÉTEINDRE</text>
+
+    <!-- Instruments list -->
+    <g transform="translate(15, 45)">
+      <!-- Piano / Clavier -->
+      <rect x="0" y="0" width="200" height="36" rx="6" fill="#0f172a" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="15" y="22" fill="#e2e8f0" font-family="sans-serif" font-size="12" font-weight="bold">🎹 Claviers / Pianos</text>
+      <text x="180" y="22" fill="#f59e0b" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">OFF</text>
+
+      <!-- Guitares / Basses -->
+      <rect x="0" y="44" width="200" height="36" rx="6" fill="#0f172a" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="15" y="66" fill="#e2e8f0" font-family="sans-serif" font-size="12" font-weight="bold">🎸 Guitares / Basses</text>
+      <text x="180" y="66" fill="#f59e0b" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">OFF</text>
+
+      <!-- Micros HF éteints -->
+      <rect x="0" y="88" width="200" height="46" rx="6" fill="#78350f" stroke="#fbbf24" stroke-width="1.5"/>
+      <text x="10" y="108" fill="#fef08a" font-family="sans-serif" font-size="11" font-weight="bold">🎤 Éteindre les Micros HF</text>
+      <text x="10" y="124" fill="#cbd5e1" font-family="sans-serif" font-size="10">Couper les interrupteurs émetteurs</text>
+    </g>
+  </g>
+
+  <!-- Colonne Droite : Ce qui RESTE BRANCHÉ -->
+  <g transform="translate(320, 75)">
+    <rect x="0" y="0" width="230" height="190" rx="10" fill="#182234" stroke="#10b981" stroke-width="1.5"/>
+    <rect x="0" y="0" width="230" height="32" rx="10" fill="#047857"/>
+    <text x="115" y="21" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">NE PAS DÉBRANCHER !</text>
+
+    <!-- Éléments fixes -->
+    <g transform="translate(15, 45)">
+      <rect x="0" y="0" width="200" height="42" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+      <text x="15" y="20" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="bold">✓ Câbles Micros Filaire / HF</text>
+      <text x="15" y="34" fill="#94a3b8" font-family="sans-serif" font-size="10">Laisser branchés sur la console</text>
+
+      <rect x="0" y="52" width="200" height="42" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+      <text x="15" y="72" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="bold">✓ Sorties Enceintes / Retours</text>
+      <text x="15" y="86" fill="#94a3b8" font-family="sans-serif" font-size="10">Ne pas toucher aux câbles XLR</text>
+      
+      <rect x="0" y="104" width="200" height="30" rx="6" fill="rgba(16,185,129,0.15)"/>
+      <text x="100" y="123" fill="#6ee7b7" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Garder le câblage intact</text>
+    </g>
+  </g>
+
+  <!-- Avertissement bas -->
+  <g transform="translate(50, 280)">
+    <rect x="0" y="0" width="500" height="75" rx="8" fill="rgba(239,68,68,0.12)" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="250" y="24" fill="#f87171" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">⚠️ RÈGLE DE DÉBRANCHEMENT DU PLATEAU</text>
+    <text x="250" y="44" fill="#e2e8f0" font-family="sans-serif" font-size="11" text-anchor="middle">Ne débrancher que les instruments personnels (jacks/alim piano, guitare, basse).</text>
+    <text x="250" y="62" fill="#cbd5e1" font-family="sans-serif" font-size="11" text-anchor="middle">Tous les micros, boîtiers et liaisons d'enceintes restent en place dans la régie.</text>
+  </g>
+</svg>
