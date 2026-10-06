@@ -8,7 +8,7 @@
  * 3. La galerie d'images par étape (gestion de 1 à plusieurs photos par étape,
  *    miniatures interactives, flèches précédent/suivant).
  * 4. La modale de zoom (Lightbox) avec navigation entre photos d'une même étape.
- * 5. La réinitialisation et le bouton d'impression.
+ * 5. La réinitialisation de la checklist.
  */
 
 function initInteractivePage() {
@@ -25,8 +25,6 @@ function initInteractivePage() {
   const progressText = document.getElementById('progress-text');
   const progressBarFill = document.getElementById('progress-bar-fill');
   const btnReset = document.getElementById('btn-reset');
-  const btnPrint = document.getElementById('btn-print');
-
   // Clé LocalStorage
   const storageKey = `x32_checklist_${pageId}`;
 
@@ -133,13 +131,6 @@ function initInteractivePage() {
         localStorage.removeItem(storageKey);
         updateProgress();
       }
-    });
-  }
-
-  // Bouton Imprimer
-  if (btnPrint) {
-    btnPrint.addEventListener('click', () => {
-      window.print();
     });
   }
 
